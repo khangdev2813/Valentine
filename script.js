@@ -27,7 +27,7 @@ noButton.addEventListener("click", function () {
 });
 
 function handleYesClick() {
-  titleElement.innerHTML = "Yayyy!! :3";
+  titleElement.innerHTML = "Ra trước lấy quà đi nhen!! :3";
   buttonsContainer.classList.add("hidden");
   changeImage("yes");
 }
@@ -55,7 +55,8 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  catImg.src = `img/cat-${image}.png`;
+  if (image == "yes") catImg.src = `img/cat-${image}.png`;
+  else catImg.src = `img/cat-${image}.jpg`;
 }
 
 function updateNoButtonText() {
