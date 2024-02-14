@@ -42,12 +42,12 @@ function resizeYesButton() {
 
 function generateMessage(noCount) {
   const messages = [
-    "No",
-    "Are you sure?",
-    "Pookie please",
-    "Don't do this to me :(",
-    "You're breaking my heart",
-    "I'm gonna cry...",
+    "Hong",
+    "Chắc chưa?",
+    "Năn nỉ chọn kia đi chài",
+    "Đừng zday mà =((",
+    "Tan nát ",
+    "Khóc luôn...",
   ];
 
   const messageIndex = Math.min(noCount, messages.length - 1);
@@ -55,7 +55,7 @@ function generateMessage(noCount) {
 }
 
 function changeImage(image) {
-  catImg.src = `img/cat-${image}.jpg`;
+  catImg.src = `img/cat-${image}.png`;
 }
 
 function updateNoButtonText() {
